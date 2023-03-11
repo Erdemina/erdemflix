@@ -1,0 +1,77 @@
+**{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #141414;
+}
+.header{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.erdemflix{
+    width: 200px;
+    transition: width 1s ;
+}
+.erdemflix:hover{
+    width: 300px;
+    cursor: pointer;
+}
+.container{
+    padding-top: 120px;
+    align-content: center;
+  
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    height: 500px;
+}
+
+.link{
+    display: inline-block;
+    background-color: red;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 100%;
+    width: 150px;
+    background-size: cover;
+    height: 150px;
+    transition: box-shadow 0.5s,width 1s,height 1s;
+}
+
+.link:hover{
+    box-shadow:0px 10px 40px whitesmoke;
+}
+#myelt{background-image: url('./media/myelt.png');}
+#instagram{background-image: url('./media/instagram.png');}
+#snapchat{background-image:  url('./media/snapchat.png');}
+#spotify{background-image:   url('./media/spotify.png');}
+#steam{background-image: url('./media/steam.jpg');}
+#twitch{background-image:    url('./media/twitch.png');}
+#github{background-image:    url('./media/github.png');}
+#onion{background-image:     url('./media/onion.png');}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .link{
+        margin-left: 5px;
+    }
+    .header{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .container{
+        padding-top: 10px;
+    }
+    .erdemflix{
+        width: 80%;
+        margin: auto;
+    }
+    .container{
+        height: 1040px;
+    }
+  }
